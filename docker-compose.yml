@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  backend:
+    image: shree06092000/analytics-backend:latest
+    ports:
+      - "5000:5000"
+    restart: always
+
+  frontend:
+    image: shree06092000/analytics-frontend:latest
+    ports:
+      - "80:80"
+    restart: always
